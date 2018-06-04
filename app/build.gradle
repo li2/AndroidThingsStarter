@@ -22,12 +22,32 @@ android {
     }
 }
 
+repositories {
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots"}
+    mavenCentral()
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    // Unit Test
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // Android Things
     compileOnly 'com.google.android.things:androidthings:+'
+
+    // Rainbow Hat driver for Android Things
+    implementation 'com.google.android.things.contrib:driver-rainbowhat:1.0'
+
+    // Kotlin
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    // Android View
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+
+    // Butter Knife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jakewharton:kotterknife:0.1.0-SNAPSHOT'
 }
