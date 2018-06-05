@@ -2,7 +2,7 @@ package androidthings.me.li2.starter
 
 import android.app.Activity
 import android.os.Bundle
-import androidthings.me.li2.starter.RainbowHatPeripheral.DriverUseCasesFragment
+import androidthings.me.li2.starter.rainbow.DriverUseCasesFragment
 
 class HomeActivity : Activity() {
 

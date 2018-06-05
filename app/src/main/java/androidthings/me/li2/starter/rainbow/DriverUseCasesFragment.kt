@@ -1,4 +1,4 @@
-package androidthings.me.li2.starter.RainbowHatPeripheral
+package androidthings.me.li2.starter.rainbow
 
 import android.app.Fragment
 import android.os.Bundle
