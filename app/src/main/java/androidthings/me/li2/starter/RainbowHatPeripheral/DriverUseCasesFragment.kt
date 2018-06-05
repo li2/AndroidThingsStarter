@@ -33,7 +33,7 @@ import com.google.android.things.pio.Gpio
  * @see [https://github.com/androidthings/contrib-drivers/tree/master/rainbowhat](https://github.com/androidthings/contrib-drivers/tree/master/rainbowhat)
  */
 
-class RainbowHatPeripheralFragment : Fragment() {
+class DriverUseCasesFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,11 +47,11 @@ class RainbowHatPeripheralFragment : Fragment() {
      for example: savedInstanceState: Bundle?
      */
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        var rootView = inflater.inflate(R.layout.rainbow_hat_peripheral_fragment, container, false)
+        var rootView = inflater.inflate(R.layout.driver_use_cases_fragment, container, false)
 
         rootView.findViewById<Switch>(R.id.red_led_switch).setOnCheckedChangeListener { _, isChecked ->  switchRedLed(isChecked)}
 
-        return  rootView;
+        return  rootView
     }
 
     override fun onDestroy() {

@@ -2,7 +2,7 @@ package androidthings.me.li2.starter
 
 import android.app.Activity
 import android.os.Bundle
-import androidthings.me.li2.starter.RainbowHatPeripheral.RainbowHatPeripheralFragment
+import androidthings.me.li2.starter.RainbowHatPeripheral.DriverUseCasesFragment
 
 class HomeActivity : Activity() {
 
@@ -12,7 +12,7 @@ class HomeActivity : Activity() {
 
         fragmentManager
                 .beginTransaction()
-                .add(R.id.fragment_container, RainbowHatPeripheralFragment())
+                .add(R.id.fragment_container, DriverUseCasesFragment())
                 .commit()
     }
 }
