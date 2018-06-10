@@ -1,6 +1,34 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar" />
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar" >
+        <item name="android:textViewStyle">@style/StarterTextTitleAppearance</item>
+        <item name="android:actionBarStyle">@style/StarterActionBarStyle</item>
+    </style>
+
+    <style name="StarterActionBarStyle" parent="@android:style/Widget.Material.Light.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/StarterDefaultTextAppearance</item>
+        <item name="android:background">@color/starterDarkerGreen</item>
+    </style>
+
+    <style name="StarterDefaultTextAppearance" parent="@android:style/TextAppearance.Material">
+        <item name="android:textSize">@dimen/text_body_size</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="StarterTextTitleAppearance" parent="@style/StarterDefaultTextAppearance">
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StarterTextSubtitleAppearance" parent="@style/StarterDefaultTextAppearance">
+        <item name="android:textSize">@dimen/text_subtitle_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="StarterTextBodyAppearance" parent="@style/StarterDefaultTextAppearance">
+        <item name="android:textSize">@dimen/text_body_size</item>
+    </style>
 
 </resources>
