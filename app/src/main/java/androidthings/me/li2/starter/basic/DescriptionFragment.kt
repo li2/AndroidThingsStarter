@@ -1,19 +1,16 @@
 package androidthings.me.li2.starter.basic
 
-
 import android.os.Bundle
-import android.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-
 import androidthings.me.li2.starter.R
 
 /**
  * A basic fragment only with a TextView to show description of the purpose of fragment.
  */
-abstract class DescriptionFragment: Fragment() {
+abstract class DescriptionFragment: StarterBaseFragment() {
 
     private lateinit var mTitleView: TextView
 

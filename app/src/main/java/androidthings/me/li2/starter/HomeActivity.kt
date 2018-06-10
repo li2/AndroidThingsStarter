@@ -1,10 +1,10 @@
 package androidthings.me.li2.starter
 
-import android.app.Activity
 import android.os.Bundle
+import androidthings.me.li2.starter.basic.StarterBaseActivity
 import androidthings.me.li2.starter.rainbow.DriverUseCasesFragment
 
-class HomeActivity : Activity() {
+class HomeActivity : StarterBaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

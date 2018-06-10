@@ -3,6 +3,9 @@
     package="androidthings.me.li2.starter">
 
     <uses-permission android:name="com.google.android.things.permission.USE_PERIPHERAL_IO"/>
+
+    <!--This permission is required to register any new input device as a user-space driver.-->
+    <uses-permission android:name="com.google.android.things.permission.MANAGE_INPUT_DRIVERS" />
     
     <application
         android:theme="@style/AppTheme"
